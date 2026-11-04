@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Автошкола "Таурус" (Київ)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Taurus Driving School</div>
+            <div class="burger-menu" id="burger-menu">☰</div>
+            <ul id="nav-links">
+                <li><a href="#courses">Курси</a></li>
+                <li><a href="#prices">Ціни</a></li>
+                <li><a href="#contact">Запис</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="courses">
+            <h1>Станьте впевненим водієм з "Таурус"</h1>
+            <p>Навчання категоріям A, B, C в Києві.</p>
+        </section>
+
+        <section id="prices">
+            <h2>Ціни на навчання</h2>
+            <div class="table-responsive">
+                <table>
+                    <tr><th>Категорія</th><th>Опис</th><th>Ціна</th></tr>
+                    <tr><td>Категорія B</td><td>Легкові авто (механіка/автомат)</td><td>15 000 грн</td></tr>
+                    <tr><td>Категорія A</td><td>Мотоцикли</td><td>8 000 грн</td></tr>
+                </table>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Запис на навчання</h2>
+            <form action="backend/submit.php" method="POST" id="enroll-form">
+                <label for="name">Ім'я:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="phone">Телефон (мінімум 10 цифр):</label>
+                <input type="tel" id="phone" name="phone" pattern="[\+]?[0-9]{10,13}" required placeholder="+380...">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <button type="submit">Відправити заявку</button>
+            </form>
+        </section>
+        
+        <section id="map-section">
+            <div id="map" style="height: 300px; width: 100%; background: #e0e0e0; display: flex; align-items: center; justify-content: center; margin-top: 20px;">
+                Тут має бути Google Map (Завантажується через JS)
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
