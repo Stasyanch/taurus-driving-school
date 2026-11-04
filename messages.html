@@ -1,0 +1,8 @@
+<!doctype html>
+<html lang="uk">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Повідомлення — Taurus</title><link rel="stylesheet" href="styles.css"></head>
+<body><main class="section"><div class="container"><p class="eyebrow">TAURUS ADMIN</p><h1>Повідомлення</h1><p id="status">Завантаження…</p><div id="messages"></div><p><a class="button button-dark" href="/">← На головну</a></p></div></main>
+<script>
+async function loadMessages(){const status=document.getElementById('status');const target=document.getElementById('messages');try{const response=await fetch('/api/messages');if(!response.ok)throw new Error('Немає доступу.');const messages=await response.json();status.textContent=`Усього повідомлень: ${messages.length}`;target.innerHTML=messages.map(item=>`<article class="review-card"><strong>${item.name}</strong><p>${item.email}</p><p>${item.message}</p><small>${item.created_at}</small><br><button class="button button-dark" data-id="${item.id}">Видалити</button></article>`).join('');target.querySelectorAll('[data-id]').forEach(button=>button.addEventListener('click',async()=>{await fetch('/api/messages/'+button.dataset.id,{method:'DELETE'});loadMessages();}));}catch(error){status.textContent=error.message;}}
+loadMessages();
+</script></body></html>

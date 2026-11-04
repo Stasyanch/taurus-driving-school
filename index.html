@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Автошкола Taurus у Києві — теорія, практика та впевненість за кермом.">
+  <title>Taurus — автошкола у Києві</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#top" aria-label="Taurus, на головну">TAURUS<span>.</span></a>
+      <button class="menu-toggle" type="button" aria-label="Відкрити меню" aria-expanded="false">☰</button>
+      <nav class="main-nav" aria-label="Головна навігація">
+        <a href="#about">Про нас</a>
+        <a href="#courses">Курси</a>
+        <a href="#reviews">Відгуки</a>
+        <a href="#contact">Контакти</a>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="Змінити тему">◐</button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">АВТОШКОЛА У КИЄВІ</p>
+          <h1>Впевненість<br><em>за кермом</em></h1>
+          <p class="hero-text">Отримайте права категорії B з досвідченими інструкторами, сучасним автопарком та зручним графіком навчання.</p>
+          <a class="button button-primary" href="#contact">Записатися на курс <span>↗</span></a>
+          <div class="hero-meta"><strong>10+</strong><span>років навчаємо<br>безпечному водінню</span></div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-ring"></div>
+          <img src="images/photo_2026-10-21_19-45-49.jpg" alt="Навчальний автомобіль Audi автошколи Taurus">
+          <div class="floating-card"><span class="status-dot"></span><div><strong>Відкритий набір</strong><small>на весняну групу</small></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="courses" class="section courses-section">
+      <div class="container">
+        <div class="section-heading"><p class="eyebrow">ОБЕРІТЬ СВІЙ ФОРМАТ</p><h2>Навчання, яке<br><em>працює на вас</em></h2></div>
+        <div class="course-grid">
+          <article class="course-card featured"><span class="card-number">01</span><div class="course-icon">◌</div><h3>Теорія</h3><p>Онлайн або офлайн заняття з ПДР у зручному для вас темпі.</p><a href="#contact">Детальніше <span>↗</span></a></article>
+          <article class="course-card"><span class="card-number">02</span><div class="course-icon">⌁</div><h3>Механіка</h3><p>Практичні заняття на автомобілях з механічною коробкою.</p><a href="#contact">Детальніше <span>↗</span></a></article>
+          <article class="course-card"><span class="card-number">03</span><div class="course-icon">◉</div><h3>Автомат</h3><p>Комфортне навчання на сучасних авто з автоматичною коробкою.</p><a href="#contact">Детальніше <span>↗</span></a></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about-section">
+      <div class="container about-grid">
+        <div class="about-image"><img src="images/photo_2026-10-21_19-45-50.jpg" alt="Навчальний автомобіль Hyundai автошколи Taurus"><span class="image-label">TAURUS<br><small>DRIVING SCHOOL</small></span></div>
+        <div class="about-copy"><p class="eyebrow">ЧОМУ TAURUS</p><h2>Ваш безпечний<br><em>старт на дорозі</em></h2><p>Ми вчимо не просто складати іспит, а впевнено керувати автомобілем у реальних умовах сучасного міста.</p><ul class="benefits"><li>Індивідуальний підхід до кожного учня</li><li>Сучасні автомобілі в ідеальному стані</li><li>Прозоре ціноутворення без прихованих платежів</li></ul><button class="text-button" id="read-more" type="button">Дізнатися більше <span>＋</span></button><p class="more-text" id="more-text" hidden>Гнучкі ранкові, денні та вечірні групи, а також інструктори з понад 10 роками досвіду допоможуть вам пройти шлях до посвідчення спокійно та впевнено.</p></div>
+      </div>
+    </section>
+
+    <section id="reviews" class="section reviews-section">
+      <div class="container"><div class="section-heading centered"><p class="eyebrow">СЛОВА НАШИХ УЧНІВ</p><h2>Вони вже<br><em>за кермом</em></h2></div><div class="reviews-grid" id="reviews-list"></div><form class="review-form" id="review-form"><input id="review-name" placeholder="Ваше ім’я" required><input id="review-text" placeholder="Ваш відгук" required><button class="button button-dark" type="submit">Додати відгук</button></form></div>
+    </section>
+
+    <section id="contact" class="section contact-section"><div class="container contact-grid"><div><p class="eyebrow">ГОТОВІ ПОЧАТИ?</p><h2>Зробіть перший<br><em>крок сьогодні</em></h2><p>Залиште контакти — ми зв’яжемося з вами та відповімо на всі запитання.</p><div class="contact-details"><a href="tel:+380671096965">+38 (067) 109-69-65</a><a href="mailto:taurus.school@gmail.com">taurus.school@gmail.com</a><span>Київ, вул. Центральна, 1</span></div></div><form class="contact-form" id="contact-form"><label>Ваше ім’я<input name="name" required minlength="2" placeholder="Як до вас звертатися?"></label><label>Телефон<input name="phone" type="tel" required placeholder="+380 (__) ___-__-__"></label><label>Email<input name="email" type="email" required placeholder="you@example.com"></label><label>Повідомлення<textarea name="message" rows="3" placeholder="Який курс вас цікавить?"></textarea></label><button class="button button-primary" type="submit">Надіслати заявку <span>↗</span></button><p class="form-status" id="form-status" role="status"></p></form></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-inner"><a class="logo" href="#top">TAURUS<span>.</span></a><p>Ваш надійний старт на дорозі.</p><p>© 2026 Taurus Driving School</p></div></footer>
+</body>
+</html>
